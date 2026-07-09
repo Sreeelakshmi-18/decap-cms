@@ -2,8 +2,8 @@ backend:
   name: github
   repo: sreelakshmi-18/decap-cms
   branch: main
-  site_domain: https://decap-cms.sreelakshmi-df1.workers.dev/
-  base_url: https://decap-cms.sreelakshmi-df1.workers.dev/
+  site_domain: https://decap-cms.sreelakshmi-df1.workers.dev
+  base_url: https://decap-cms.sreelakshmi-df1.workers.dev
   auth_endpoint: /api/auth
 
 media_folder: public/assets/images
