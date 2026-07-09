@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --color-black: #121A1A;
+  --color-green: #66FBF0;
+  --color-white: white;
+  --color-turquoise: #46A19E;
+  --color-beige: #E6CFA1;
+  --font-family-heading: 'Ubuntu Mono Bold', monospace;
+  --font-family-body: 'Ubuntu Regular', sans-serif;
+}

@@ -1,0 +1,26 @@
+[tools]
+node = "26.3.1"
+
+"npm:npm" = "11.18.0"
+
+[settings]
+# Tells mise to officially respect .nvmrc and .node-version files
+idiomatic_version_file_enable_tools = ["node"]
+experimental = true
+pin = true
+
+[tasks.dev]
+run = "npm run dev"
+description = "Starts the development server"
+
+[tasks.build]
+run = "npm run build"
+description = "Builds the project with npm"
+
+[tasks.preview]
+run = "npm run build && wrangler pages dev ."
+description = "Starts the preview server using astro's inbuilt preview"
+
+[tasks.func]
+run = "wrangler pages dev ."
+description = "Starts a wrangler server for serving functions in the local folder"

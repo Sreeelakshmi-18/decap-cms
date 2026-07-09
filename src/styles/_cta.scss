@@ -1,0 +1,48 @@
+.cta-button {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: rgba($color: $turquoise, $alpha: 0.8);
+    color: var(--background);
+    font-family: "Ubuntu Mono", monospace;
+    z-index: 9;
+    border-radius: 8px 0 0 8px;
+
+    .half {
+        cursor: pointer;
+        transition: background 100ms linear;
+        margin: 0;
+
+        &.first {
+        border-radius: 8px 0 0 0;
+        }
+
+        &.last {
+        border-radius: 0 0 0 8px;
+        }
+
+        &:hover {
+            background: linear-gradient(110deg, lighten($green, 30%), $green);
+
+            svg {
+                .cls-1 {
+                    fill: $turquoise;
+                }
+            }
+        }
+
+        padding: 0.5rem;
+
+        svg {
+            width: 1.5rem;
+            height: 1.5rem;
+
+            .cls-1 {
+                fill: $white;
+            }
+        }
+    }
+}
