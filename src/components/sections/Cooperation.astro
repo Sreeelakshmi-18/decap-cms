@@ -57,7 +57,7 @@ const { maintitle, faq, image_src, image_alt, number, iconComponent: IconCompone
         <img src={image_src} alt={image_alt || ""} />
       </div>
     ) : null}
-    {number ? <SectionDivider nextsection="about" /> : <SectionDivider nextsection="collab-content" />}
+    {!number && <SectionDivider nextsection="collab-content" />}
   </section>
 </div>
 

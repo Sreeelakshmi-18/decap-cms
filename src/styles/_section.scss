@@ -166,26 +166,6 @@ section {
     }
 }
 
-#technologies,
-#sectors {
-    .console {
-        position: relative;
-    }
-
-    .grid5 {
-        width: 100%;
-    }
-
-    h4 {
-        font-size: 1.25rem;
-    }
-
-    p {
-        font-size: 0.75rem;
-        max-width: none;
-    }
-}
-
 #collaboration {
     position: relative;
     display: flex;
@@ -289,27 +269,3 @@ section {
     }
 }
 
-.author-wrapper {
-    .author {
-        max-width: 600px;
-
-        img {
-            max-width: 200px;
-            width: 100%;
-            height: auto;
-            border-radius: 50%;
-            object-fit: cover;
-            overflow: hidden;
-            margin: 0;
-        }
-
-        .job {
-            color: $green;
-            font-size: 1.1rem;
-        }
-
-        p {
-            text-align: start;
-        }
-    }
-}
